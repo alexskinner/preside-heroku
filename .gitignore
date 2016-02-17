@@ -1,0 +1,9 @@
+target
+Procfile
+webroot/WEB-INF
+.env
+webroot/logs
+webroot/uploads
+webroot/preside
+!webroot/WEB-INF/web.xml
+!webroot/WEB-INF/lucee/lucee-web.xml.cfm
