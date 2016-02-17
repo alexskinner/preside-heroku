@@ -1,9 +1,8 @@
 target
 Procfile
 .env
-webroot/WEB-INF
 webroot/logs
 webroot/uploads
 webroot/preside
-!webroot/WEB-INF/web.xml
-!webroot/WEB-INF/lucee/lucee-web.xml.cfm
+webroot/WEB-INF/lib
+webroot/WEB-INF/lucee-server/bundles
