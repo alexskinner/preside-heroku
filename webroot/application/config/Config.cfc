@@ -17,6 +17,6 @@ component extends="preside.system.config.Config" output=false {
 
 		settings.features.websiteUsers.enabled = true;
 		settings.autoSyncDB = true;
-		settings.showErrors = true;
+		settings.showErrors = false;
 	}
 }
