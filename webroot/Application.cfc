@@ -25,7 +25,6 @@ component extends="preside.system.Bootstrap" {
 	, password: dsConnection.password
 	};
 
-this.mappings["/uploads/assets"]="S3://AKIAINPZNEBAKNO2WL3A:d^)}8CQ1ISFh@/pixl8assets/";
 
 
 	setupApplication( id = "heroku", appMapping = "/localapp");
