@@ -25,8 +25,6 @@ component extends="preside.system.Bootstrap" {
 	, password: dsConnection.password
 	};
 
-
-
 	setupApplication( id = "heroku", appMapping = "/localapp");
 
 }
