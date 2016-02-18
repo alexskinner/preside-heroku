@@ -20,6 +20,3 @@ component extends="preside.system.config.Config" output=false {
 		settings.showErrors = true;
 	}
 }
-
-
-postgres://ypandhpfsnnndk:dOylAhpAgiAQNbeVf9PIgmDnQJ@ec2-54-217-238-100.eu-west-1.compute.amazonaws.com:5432/d35q9htbo5sa2e
