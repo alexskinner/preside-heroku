@@ -23,6 +23,7 @@ component extends="preside.system.Bootstrap" {
 	, connectionString: 'jdbc:#dsConnection.connectionString##dsConnection.SSL#'
 	, username: dsConnection.username
 	, password: dsConnection.password
+	, connectionLimit:20
 	};
 
 	setupApplication( id = "heroku", appMapping = "/localapp");

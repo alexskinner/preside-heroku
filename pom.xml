@@ -10,7 +10,7 @@
 
 <!-- Set your Lucee and tomcat versions -->
   <properties>
-        <lucee.version>5.0.0.189-SNAPSHOT</lucee.version>
+        <lucee.version>5.0.0.191-SNAPSHOT</lucee.version>
         <tomcatrunner.version>8.0.30.1</tomcatrunner.version>
    </properties>
 

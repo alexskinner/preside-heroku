@@ -33,7 +33,7 @@ Path placeholders:
 <!--	or ask your database distributor 																-->
 
 	<data-sources>
-	<data-source allow="511" blob="false" class="org.postgresql.Driver" clob="false" connectionTimeout="1" custom="" database="test" dbdriver="Other" dsn="jdbc:postgres://ec2-54-247-167-218.eu-west-1.compute.amazonaws.com:5432/dbaum88ibhsqlf?ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" host="" metaCacheTimeout="60000" name="test" password="encrypted:7178cbb36261186ddab4fa6b5808a166c55f0f9c2a28f16cd56c6aea3516e1680b207d5c831d2d328e66df6d74a2100f0fed73027ec07ba7ebe20552bf018c12" storage="false" username="poksjlmbrprdnv" validate="false"/></data-sources>
+	</data-sources>
 
 	<resources>
     	<!--
@@ -205,7 +205,7 @@ for every argument defined lucee tries to call a matching setter method
 		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/mail.log" layout="classic" name="mail"/>
 		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/scheduler.log" layout="classic" name="scheduler"/>
 		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/trace.log" layout="classic" name="trace"/>
-		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/application.log" layout="classic" level="info" name="application"/>
+		<logger appender="resource" appender-arguments="streamtype:output" appender-class="lucee.commons.io.log.log4j.appender.ConsoleAppender" layout="classic" layout-arguments="" layout-class="lucee.commons.io.log.log4j.layout.ClassicLayout" level="INFO" name="application"/>
 		<logger appender="resource" appender-arguments="path:{lucee-config}/logs/exception.log" layout="classic" level="info" name="exception"/>
 	</logging>
 <datasource/><rest/><gateways/><orm/><search/></cfLuceeConfiguration>
