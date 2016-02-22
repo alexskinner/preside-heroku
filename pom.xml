@@ -21,11 +21,11 @@
           <version>${lucee.version}</version>
       </dependency>
       <!-- We need a specific postgres driver version -->
-      <dependency>
+     <!-- <dependency>
           <groupId>org.postgresql</groupId>
           <artifactId>postgresql</artifactId>
           <version>9.4-1206-jdbc41</version>
-      </dependency>
+      </dependency>-->
   </dependencies>
 
   <repositories>
