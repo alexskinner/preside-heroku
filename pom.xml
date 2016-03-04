@@ -5,13 +5,13 @@
   <groupId>preside.heroku</groupId>
   <artifactId>preside.heroku</artifactId>
   <version>1.0.0</version>
-  <name>Preside Heroku Application Template</name>
+  <name>Preside Heroku Build pack</name>
   <packaging>pom</packaging>
 
 <!-- Set your Lucee and tomcat versions -->
   <properties>
-        <lucee.version>5.0.0.191-SNAPSHOT</lucee.version>
-        <tomcatrunner.version>8.0.30.1</tomcatrunner.version>
+        <lucee.version>5.0.0.212-SNAPSHOT</lucee.version>
+        <tomcatrunner.version>8.0.30.2</tomcatrunner.version>
    </properties>
 
   <dependencies>
@@ -20,12 +20,6 @@
           <artifactId>lucee</artifactId>
           <version>${lucee.version}</version>
       </dependency>
-      <!-- We need a specific postgres driver version -->
-     <!-- <dependency>
-          <groupId>org.postgresql</groupId>
-          <artifactId>postgresql</artifactId>
-          <version>9.4-1206-jdbc41</version>
-      </dependency>-->
   </dependencies>
 
   <repositories>
@@ -67,7 +61,6 @@
                 <include>**/*</include>
               </includes>
               <excludes>
-                <exclude>/lucee-server/bundles/pgjdbcng-bundle.jar</exclude>
                 <exclude>*.xml</exclude>
                 <exclude>**/lucee-server.xml</exclude>
                 <exclude>**/lucee-web.xml.cfm</exclude>
@@ -171,7 +164,7 @@
             <configuration>
               <target>
                 <echo file="Procfile"
-                  message="web: java $JAVA_OPTS -jar target/webapp-runner.jar --port $PORT webroot " />
+                  message="web: java $JAVA_OPTS -XX:+UseG1GC -jar target/webapp-runner.jar --port $PORT webroot " />
               </target>
             </configuration>
             <goals>
