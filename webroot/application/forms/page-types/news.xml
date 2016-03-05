@@ -22,30 +22,8 @@
 	<tab id="main">
 		<fieldset id="main">
 			<!-- add / remove / modify fields in the main tab & fieldset here -->
-		</fieldset>
-	</tab>
-
-	<tab id="meta">
-		<fieldset id="meta">
-			<!-- add / remove / modify fields in the main tab & fieldset here -->
-		</fieldset>
-	</tab>
-
-	<tab id="dates">
-		<fieldset id="dates">
-			<!-- add / remove / modify fields in the main tab & fieldset here -->
-		</fieldset>
-	</tab>
-
-	<tab id="news">
-		<fieldset id="news">
-			<!--
-				we have created this tab and fieldset for you to put in all your custom
-				fields for this page type. You may wish to move the fields to different tabs, remove them from the form
-				or do whatever you will
-			-->
 			<field binding="news.posteddate" />
-
 		</fieldset>
 	</tab>
+
 </form>

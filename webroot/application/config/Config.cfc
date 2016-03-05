@@ -15,8 +15,11 @@ component extends="preside.system.config.Config" output=false {
 		settings.ckeditor.defaults.stylesheets.append( "css-bootstrap" );
 		settings.ckeditor.defaults.stylesheets.append( "css-layout" );
 
-		settings.features.websiteUsers.enabled = true;
+		settings.features.websiteUsers.enabled = false;
 		settings.autoSyncDB = true;
 		settings.showErrors = false;
+
+		settings.uploads_directory     = server.system.environment.S3_BUCKET;
+		settings.tmp_uploads_directory = ExpandPath( "/uploads" );
 	}
 }

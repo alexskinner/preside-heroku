@@ -1,5 +1,14 @@
 component extends="preside.system.Bootstrap" {
 
+	if (not isDefined("server.system.environment.database_url") or isEmpty(server.system.environment.database_url)){
+		echo ("The database_url environment variable is required, only Postgres is supported unless this build pack is modified");
+		abort;
+	}
+	if (not isDefined("server.system.environment.S3_BUCKET") or isEmpty(server.system.environment.S3_BUCKET)){
+		echo ("The S3_BUCKET environment variable is required for website uploads");
+		abort;
+	}
+
 	function parsepgDS(DSSTRING){
 	  var ds={};
 	  ds.connectionString = ReReplaceNoCase( arguments.DSSTRING, "^postgres://", "postgresql://" );
@@ -27,5 +36,4 @@ component extends="preside.system.Bootstrap" {
 	};
 
 	setupApplication( id = "heroku", appMapping = "/localapp");
-
 }
