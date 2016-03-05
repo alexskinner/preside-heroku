@@ -17,7 +17,7 @@ component extends="preside.system.config.Config" output=false {
 
 		settings.features.websiteUsers.enabled = false;
 		settings.autoSyncDB = true;
-		settings.showErrors = false;
+		settings.showErrors = true;
 
 		settings.uploads_directory     = server.system.environment.S3_BUCKET;
 		settings.tmp_uploads_directory = ExpandPath( "/uploads" );
